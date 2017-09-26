@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans|Ubuntu|Arvo');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans|Ubuntu|Arvo|Satisfy|La+Belle+Aurore');
 
 .row {
   /* border: 1px solid red; */
@@ -9,21 +9,17 @@
 }
 
 
-.row-btn-code {
-  margin: 26px auto;
-  float: right;
+#btn-container {
+  margin: 10px;
+  z-index: 1;
 }
 
 #btn-code {
-  position: fixed;
-  top: 10px;
-  right: 20vw;
   transition: all 0.5s ease;
-  width: 65px;
+  /* width: 65px; */
   border-radius: 0;
   font-family: 'Julius Sans One', serif;
   box-shadow: 0 0 10px -5px #000;
-  z-index: 1;
 }
 
 
@@ -35,6 +31,34 @@
   
 }
 
+@media only screen and (max-width: 600px) {
+  /* For tablets: */
+  #btn-code {
+    position: fixed;
+    right: 20px;
+  }
+
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  #btn-code{
+    position: fixed;
+    right: 20px;
+  }
+
+}
+@media only screen and (min-width: 1200px) {
+  /* For desktop: */
+
+  #btn-code{
+    position: fixed;
+    left: 50%;
+    right: auto; 
+    transform: translate(-50%, 0);
+  }
+
+}
 
 .container {
   position: relative;
@@ -54,32 +78,6 @@
   font-size: .7em;
 }
 
-#code::before {
-  
-  background:linear-gradient(135deg, red 16px, transparent 0), linear-gradient(225deg, blue 16px, transparent 0);
-  background-position: left bottom, left bottom, top;
-  background-repeat: repeat-y;
-  background-size: 10px 10px,10px 10px,100% 100%
-  content: " ";
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  height: 32px;
-/* 
-  background: linear-gradient(-45deg, #ffffff 16px, #000 10px), linear-gradient(45deg, #ffffff 16px, #000 10px);
-  background-position: right;
-  background-repeat: repeat-y;
-  background-size: 32px 32px;
-  content: " ";
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  width: 100%;
-  height: 32px; */
-}
 
 #code.slide {
   left: -50vw;
@@ -89,6 +87,8 @@
   position: relative;
   transition: all 0.5s ease;
   left: 0;
+  top: 35px;
+  height: 100vh;
 }
 
 #resume.shift {
@@ -135,6 +135,38 @@
   text-shadow: 2px 2px 0px rgba(255, 255, 255, 1.0);
 }
 
+.sub-title {
+  position: relative;
+  right: -8vw;
+  top: -20px;
+  font-size: 1.8em;
+  font-family: 'La Belle Aurore', 'Satisfy', cursive;
+  /* font-weight: bold; */
+}
+
+@media only screen and (max-width: 600px) {
+  /* For tablets: */
+  .title {
+    font-size: 4em;
+  }
+
+  /* .sub-title {
+    left: -20px;;
+    right: auto;
+  } */
+
+}
+
+@media only screen and (min-width: 1200px) {
+  /* For desktop: */
+
+  .sub-title {
+    position: relative;
+    right: -2vw;
+  }
+
+}
+
 .right-section {
   border-left: 2px solid rgba(170, 170, 170, 0.85);;
 }
@@ -155,6 +187,27 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: bolder;
   font-size: 0.8em;
+}
+
+.link-portfolio {
+  color: #80DAFF;
+  background: #D30707;
+  padding: 1px 3px;
+  border-radius: 3px;
+}
+
+.link-imletired {
+  color: #F1AA1F;
+  background: #573500;
+  padding: 1px 3px;
+  border-radius: 3px;
+}
+
+.link-github {
+  color: #0C0;
+  background: #24292E;
+  padding: 1px 3px;
+  border-radius: 3px;
 }
 
 
@@ -238,9 +291,16 @@ p {
 /* ##### Scrollbar css styling ##### */
 /* ##### --------------------- ##### */
 body {
-  /* overflow-y: hidden; */
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
 }
 
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 101vh;
+}
 
 body::-webkit-scrollbar {
   width: 0.3em;
@@ -261,12 +321,12 @@ body::-webkit-scrollbar-thumb{
 
 
 #code {
-  overflow-y: hidden;
+  overflow-y: scroll;
+  height: 101vh;
 }
 
-
 #code::-webkit-scrollbar {
-  width: 0.3em;
+  width: 0.5em;
   height: 0.5em;
 }
 
