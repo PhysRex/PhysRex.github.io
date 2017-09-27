@@ -9,12 +9,10 @@
 }
 
 
-
-
-
 body * {
   color: rgba(60, 60, 60, 0.85);
   font-family: 'Ubuntu', sans-serif;
+  /* animation: 1s ease-in-out fadeInOut; */
 }
 
 p {
@@ -110,6 +108,19 @@ p {
 }
 
 
+@keyframes fadeInOut {
+  0%, 50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.top-bar {
+  /* animation: 4s ease fadeInOut; */
+}
 
 .top-bar {
   display: flex;
@@ -141,17 +152,44 @@ p {
 
 
 
+.row-title {
+  /* animation: 2s ease-in-out fadeInOut; */
+}
 
 .title {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 5em;
-  text-shadow: 2px 2px 0px rgba(255, 255, 255, 1.0);
+  font-size: 5em;  
+}
+
+.sub-title-test {
+  background: rgba(60, 60, 60, 0.85) -webkit-gradient(linear, 100% 0, 0 0, from(#acacac), color-stop(0.5, #ffffff), to(#acacac));  
+  background-position: -80px top; /*50px*/
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-name: shimmer;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-delay: 1.3s;
+  animation-timing-function: ease-in;
+  background-size: 40px 100%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: left top; /*50px*/
+  }
+
+  100% {
+    background-position: bottom right; /*200px*/
+  }
 }
 
 .sub-title {
   position: relative;
   right: -8vw;
   top: -20px;
+  margin-bottom: -10px;
   font-size: 1.8em;
   font-family: 'La Belle Aurore', 'Satisfy', cursive;
   /* font-weight: bold; */
@@ -205,7 +243,7 @@ p {
   color: #A35E09;
   font-family: 'Open Sans', sans-serif;
   font-weight: bolder;
-  font-size: 0.8em;
+  font-size: 0.88em;
 }
 
 .sub-heading.top {
@@ -243,7 +281,23 @@ p {
   margin-bottom: 0;
 }
 
-
+.project-title>a {
+  /* transition: all 0.2s ease; */
+  color: rgba(60, 60, 60, 0.85);
+  border-radius: 3px;
+}
+.project-title>a:hover {
+  /* background: #C57410;
+  color: #fff;
+  text-decoration: none; */
+  /* color: #C57410; */
+}
+.project-title>a:focus {
+  
+}
+.project-title>a:active {
+  
+}
 
 
 .job-header {
@@ -302,14 +356,16 @@ p {
 
 
 .footer {
-  margin: 20px auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
   color: orange;
 }
 
 .footer * {
   display: inline;
   font-family: 'La Belle Aurore', serif;
-  font-size: 1.5em
+  font-size: 1.6em;
+  padding: 0 7px;
 }
 
 .footer-email {
@@ -353,8 +409,8 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 0.3em;
-  height: 0.3em;
+  width: 0.5em;
+  height: 0.5em;
 }
 
 body::-webkit-scrollbar-track {
@@ -363,8 +419,8 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb{
   margin: 0 2px;
-  background-color: #BEC0C3;
-  border-radius: 5px;
+  background-color: rgba(112, 114, 115, 0.70);
+  /* border-radius: 5px; */
   /* outline: 0.3 solid red; */
 }
 
