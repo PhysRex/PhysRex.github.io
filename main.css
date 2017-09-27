@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans|Ubuntu|Arvo|Satisfy|La+Belle+Aurore');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans|Ubuntu|Arvo|Satisfy|La+Belle+Aurore|Expletus+Sans');
 
 .row {
   /* border: 1px solid red; */
@@ -6,6 +6,19 @@
 
 [class^="col-"] {
   /* border: 1px solid blue; */
+}
+
+
+
+
+
+body * {
+  color: rgba(60, 60, 60, 0.85);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+  margin: 0;
 }
 
 
@@ -42,7 +55,7 @@
 
 @media only screen and (min-width: 600px) {
   /* For tablets: */
-  #btn-code{
+  #btn-code {
     position: fixed;
     right: 20px;
   }
@@ -167,6 +180,12 @@
 
 }
 
+.about-me {
+  margin-bottom: 30px;
+}
+
+
+
 .right-section {
   border-left: 2px solid rgba(170, 170, 170, 0.85);;
 }
@@ -188,6 +207,11 @@
   font-weight: bolder;
   font-size: 0.8em;
 }
+
+.sub-heading.top {
+  margin-top: 10px;
+}
+
 
 .link-portfolio {
   color: #80DAFF;
@@ -211,25 +235,56 @@
 }
 
 
-
-
-.job-title {
+.project-title {
+  font-family: 'Expletus Sans', cursive;
+  font-size: 1.2em;
+  font-weight: bold;
   margin-top: 15px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
+}
+
+
+
+
+.job-header {
+  margin-top: 15px;
+  margin-bottom: -5px;
 
   font-weight: bold;
   font-size: 1.2em;
 }
 
-.job-title>span {
+.job-header>span {
   font-size: 0.8em;
   font-style: italic;
   font-weight: normal;
+  
+}
+
+.job-title {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.job-title>span {
+  font-weight: normal;
+  font-style: italic;
+  padding-left: 1px;
+}
+
+.job-dates {
+  margin: 0 auto;
+  font-size: .8em;
+}
+
+.job-description {
+  font-size: .8em;
 }
 
 .edu-title {
+  margin-top: 15px;
   margin-bottom: 0;
-  font-weight: bold;
+  font-size: 1em;
   text-transform: uppercase;
 }
 
@@ -239,12 +294,8 @@
   font-style: italic;
 }
 
-
-p {
-  margin: 0;
-
-  color: rgba(60, 60, 60, 0.85);
-  font-family: 'Ubuntu', sans-serif;
+.edu-text {
+  font-size: .9em;
 }
 
 
@@ -257,9 +308,8 @@ p {
 
 .footer * {
   display: inline;
-
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 1.2em
+  font-family: 'La Belle Aurore', serif;
+  font-size: 1.5em
 }
 
 .footer-email {
@@ -322,7 +372,7 @@ body::-webkit-scrollbar-thumb{
 
 #code {
   overflow-y: scroll;
-  height: 101vh;
+  /* height: 101vh; */
 }
 
 #code::-webkit-scrollbar {

@@ -17,7 +17,7 @@
   </head>
   <body>
 
-    <pre class="view slide" id="code"><code class="language-html">
+    <pre class="view slide" id="code"><code class="language-html" id="codeTag">
       &lt;div class="container"&gt;
         &lt;div class="row row-btn-code"&gt;
           &lt;div class="col-xs-12 text-center"&gt;
@@ -128,7 +128,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-offset-2 col-xs-8 text-center">
+        <div class="about-me col-xs-offset-2 col-xs-8 text-center">
           <h4 class="sub-heading ">about me</h4>
           <p>I am a budding Front End Web Developer. I have been in love with technology since childhood and am eager be a part of making the future amazing. My philosophy is to create sites and apps with User Experience at the heart of every project.</p>
         </div>
@@ -136,42 +136,112 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="container-fluid">
-            <div class="col-xs-4 text-right left-section">
-              <h4 class="sub-heading">skills</h4>
-                <p>HTML</p>
-                <p>NodeJS</p>
-              <h4 class="sub-heading">sites</h4>
-              <p><a class="link-portfolio" href="http://physrex.com">Portfolio</a></p>
+            <div class="col-xs-2"></div>
+            <div class="col-xs-2 text-right left-section">
+              <h4 class="sub-heading top">sites</h4>
+                <p><a class="link-portfolio" href="http://physrex.com">Portfolio</a></p>
                 <p><a class="link-imletired" href="https://imletired.com/">Im le Tired</a></p></p>
               <h4 class="sub-heading">github</h4>
                 <p><a class="link-github" href="https://github.com/PhysRex">PhysRex</a></p>
+              <h4 class="sub-heading">skills</h4>
+                <p>Continuous Improvement</p>
+                <p>Responsive Design</p>
+                <p>GIT Version Control</p>
+                <p>Linux</p>
               <h4 class="sub-heading">languages &amp; frameworks</h4>
                 <p>HTML</p>
-                <p>CSS</p>
+                <p>Bootstrap</p>
+                <p>CSS/Sass/SCSS</p>
                 <p>JavaScript</p>
                 <p>ReactJS</p>
+                <p>NodeJS</p>
+                <p>jQuery</p>
+              <h4 class="sub-heading">fun facts</h4>
+                <p>Traveled to more countried than states (18)</p>
+                <p>Musician</p>
+                <p>Fluent in Spanish</p>
             </div>
-            <div class="col-xs-8 right-section">
-              <h4 class="sub-heading">projects</h4>
-                <h5 class="job-title">Roguelike Dungeon Crawler <span>[jobtitle]</span></h5>
-                  <p class="job-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</p>
-                <h5 class="job-title">Game of Life <span>[jobtitle]</span></h5>
-                  <p class="job-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</p>
-                <h5 class="job-title">Lemma <span>[jobtitle]</span></h5>
-                  <p class="job-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</p>
-              <h4 class="sub-heading">experience</h4>
-                <h5 class="job-title">Avon Products, Inc. <span>Rye/New York, NY</span></h5>
-                  <p class="job-dates">APR 2012 - OCT 2016</p>
-                  <p class="job-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</p>
-                <h5 class="job-title">National Science Foundation <span>Hoboken, NJ</span></h5>
-                  <p class="job-dates">APR 2012 - OCT 2016</p>
-                  <p class="job-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</p>
+            <div class="col-xs-6 right-section">
+              <h4 class="sub-heading top">intereseting projects</h4>
+                <h5 class="project-title">/Galileo</h5>
+                  <p class="job-description">Designed in the style of Roguelike Dungeon Crawlers, this game has multiple stages, self-creating items and enemies, and uses React’s state and component API. Includes original sound effects and music.</p>
+                <h5 class="project-title">/Game of Life</h5>
+                  <p class="job-description">Recreating mathematician John Conway's famous Game of Life, this is a teaching tool to explore the dynamics of cellular automata in an interactive, simple and inviting environment. Made with ReactJS and Sass.</p>
+                <h5 class="project-title">/Lemma</h5>
+                  <p class="job-description">This is a party game based on Catch Phrase®, and designed for mobile screens. A mix of Charades and Hot Potato, players must get their teammates to utter the phrase on the screen and pass the mobile device to their opponents before time runs out. Created with ‘vanilla’ JS and the Bootstrap CSS.</p>
               <h4 class="sub-heading">education</h4>
-                <h6 class="edu-title">Fordham University <span class="edu-city">Bronx, NY</span></h6>
-                  <p class="job-description">B.S. in Physics, minor in Mathematics (May 2007)</p>
-                <h6 class="edu-title">Stevens Institute of Technology <span class="edu-city">Hoboken, NJ</span></h6>
-                  <p class="job-description">M.S. in Physics (May 2009)</p>
+                <h6 class="edu-title">Stevens Institute of Technology</h6>
+                  <p class="edu-text">M.S. in Physics, May 2009</p>
+                <h6 class="edu-title">Fordham University</h6>
+                  <p class="edu-text">B.S. in Physics &amp; minor in Mathematics, May 2007</p>
+              <h4 class="sub-heading">corporate</h4>
+                <h5 class="job-header">Avon Products, Inc. <span>Rye/New York, NY</span></h5>
+                  <h6 class="job-title">Omni-Channel Campaign Manager</h6>
+                    <p class="job-dates">Spring 2015 &ndash; Fall 2016</p>
+                    <ul>
+                      <li class="job-description">Developed and integrated merchandising plans to support corporate objectives and marketing strategies</li>
+                      <li class="job-description">Communicated direction for look, tone, and feel, organizing cross-functional teams to support corporate strategies</li>
+                      <li class="job-description">Analyzed and evaluated financial quarterly KPIs and metrics</li>
+                      <li class="job-description">Improved planning process, internally and for cross-functional teams, leveraging internal marketing analytics</li>
+                      <li class="job-description">Wrote executive summaries and presented to senior management team</li>
+                      <li class="job-description">Manage assistant and associate campaign owners</li>
+                    </ul>
+                  <h6 class="job-title">Senior Analyst</h6>
+                    <p class="job-dates">Summer 2014 &ndash; Spring 2015</p>
+                    <ul>
+                      <li class="job-description">In charge of allocation and shipment of all finished goods to North-American Distribution Centers (inventory value ~$150MM)</li>
+                      <li class="job-description">Lead for all technical projects, system and process improvements</li>
+                      <li class="job-description">Designed and presented new standards through SOPs and presentations</li>
+                      <li class="job-description">Trained existing and new hires</li>
+                      <li class="job-description">Primary point of contact with IT, Planning, Logistics, and Branches for tactical service execution that requires special provisions/handling</li>
+                      <li class="job-description">Responsible for Deployment data maintenance, accuracy, KPI reporting, and monthly presentations to senior management</li>
+                      <li class="job-description">Manage one direct report</li>
+                    </ul>
+                  <h6 class="job-title">Deployment Analyst</h6>
+                    <p class="job-dates">Spring 2012 &ndash; Summer 2014</p>
+                    <ul>
+                      <li class="job-description">Managed the distribution of finished goods from Avon’s contract manufacturers across North America</li>
+                      <li class="job-description">Work cross-functionally to meet service goals, exceeding 99.5%</li>
+                      <li class="job-description">Improved role efficiency and productivity for entire department by automating tasks through programming</li>
+                      <li class="job-description">Created and managed various processes and websites across Avon North America</li>
+                    </ul>
+              <h4 class="sub-heading">academia</h4>
+                  <h6 class="job-title">Teaching Fellow <span>National Science Foundation</span></h6>
+                    <p class="job-dates">Fall 2010 &ndash; Summer 2011</p>
+                    <ul>
+                      <li class="job-description">Awarded <b>NSF</b> Teaching Fellowship through Stevens Institute of Technology GK-12 grant, with <b>full tuition and $30k stipend</b></li>
+                      <li class="job-description">Expanded STEM content in schools, bridging the gap between the classroom and real-world applications by exposing students to various engineering and science fields</li>
+                    </ul>
+                    
+                  <h6 class="job-title">Adjunct Instructor <span>New York University</span></h6>
+                    <p class="job-dates">Summer 2010 &ndash; Fall 2010</p>
+                    <ul>
+                      <li class="job-description">Intensive General Physics I curriculum, including problem sets weekly and exams every other week</li>
+                    </ul>
+                  
+                  <h6 class="job-title">Teaching Assistant <span>Stevens Institute of Technology</span></h6>
+                    <p class="job-dates">Fall 2007 &ndash; Summer 2010</p>
+                    <ul>
+                      <li class="job-description">Taught two or three classes every semester once a week</li>
+                      <li class="job-description">Created and graded quizzes and exams</li>
+                      <li class="job-description">Tutored students individually and in groups</li>
+                    </ul>
+                  
+                  <h6 class="job-title">Research Assistant <span>Mesoscopic Quantum Systems</span></h6>
+                    <p class="job-dates">Fall 2007 &ndash; Summer 2011</p>
+                    <ul>
+                      <li class="job-description">Modeled fully quantum solutions through stochastic differential equations and programmed new efficient methods of numerical simulations</b></li>
+                      <li class="job-description">Assisted with training and development of undergraduates interns</li>
+                    </ul>
+                  
+                  <h6 class="job-title">McNair Research Scholar <span>Clarkson University</span></h6>
+                   <p class="job-dates">Summer 2006</p>
+                  
+                  <h6 class="job-title">Teacher, Tutor, Lab Assistant, and Grader <span>Fordham University</span></h6>
+                    <p class="job-dates">Fall 2004 &ndash; 2007</p>
+                  
             </div>
+            <div class="col-xs-2"></div>
           </div>
         </div>
       </div>
