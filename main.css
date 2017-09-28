@@ -200,22 +200,19 @@ p {
   .title {
     font-size: 4em;
   }
-
-  /* .sub-title {
-    left: -20px;;
+  .sub-title {
+    position: relative;
     right: auto;
-  } */
-
+    top: auto;
+    margin: -10px 0 10px 0;
+  }
 }
-
 @media only screen and (min-width: 1200px) {
   /* For desktop: */
-
   .sub-title {
     position: relative;
     right: -2vw;
   }
-
 }
 
 .about-me {
@@ -245,13 +242,6 @@ p {
   }
   .right-section {
     padding-right: 0 !important;
-  }
-}
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  #btn-code {
-    position: fixed;
-    right: 20px;
   }
 }
 
