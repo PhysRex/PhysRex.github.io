@@ -238,6 +238,24 @@ p {
   margin-bottom: 0px;
 }
 
+@media only screen and (max-width: 600px) {
+  /* For tablets: */
+  .left-section {
+    padding-left: 0 !important;
+  }
+  .right-section {
+    padding-right: 0 !important;
+  }
+}
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  #btn-code {
+    position: fixed;
+    right: 20px;
+  }
+}
+
+
 .sub-heading {
   text-transform: uppercase;
   color: #A35E09;
