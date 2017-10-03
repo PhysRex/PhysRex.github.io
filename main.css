@@ -27,7 +27,6 @@ p {
 
 #btn-code {
   transition: all 0.5s ease;
-  /* width: 65px; */
   border-radius: 0;
   font-family: 'Julius Sans One', serif;
   box-shadow: 0 0 10px -5px #000;
@@ -94,18 +93,29 @@ p {
   left: -50vw;
 }
 
+
+
+
 #resume {
   position: relative;
-  transition: all 0.5s ease;
   left: 0;
   top: 35px;
   height: 100vh;
+  
 }
 
 #resume.shift {
-  left: 30vw;
-  
+  left: 30vw;  
 }
+
+
+
+@media only screen and (max-width: 600px) {
+  .resume-outer-row {
+    padding: 0 !important;
+  }
+}
+
 
 
 @keyframes fadeInOut {
@@ -156,6 +166,13 @@ p {
   /* animation: 2s ease-in-out fadeInOut; */
 }
 
+@media only screen and (max-width: 600px) {
+  .sub-title {
+    text-align: center;
+  }
+}
+
+
 .title {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 5em;  
@@ -187,7 +204,7 @@ p {
 
 .sub-title {
   position: relative;
-  right: -8vw;
+  /* right: 8vw; */
   top: -20px;
   margin-bottom: -10px;
   font-size: 1.8em;
