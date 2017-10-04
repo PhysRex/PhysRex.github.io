@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans|Ubuntu|Arvo|Satisfy|La+Belle+Aurore|Expletus+Sans');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans|Ubuntu|Arvo|Satisfy|La+Belle+Aurore|Expletus+Sans|Righteous');
 
 .row {
   /* border: 1px solid red; */
@@ -20,18 +20,23 @@ p {
 }
 
 
-#btn-container {
-  margin: 10px;
+#btn-code, #btn-home {
+  top: 0px;
+  margin-top: 10px;
   z-index: 1;
 }
 
-#btn-code {
+#btn-code, #btn-home {
   transition: all 0.5s ease;
   border-radius: 0;
   font-family: 'Julius Sans One', serif;
   box-shadow: 0 0 10px -5px #000;
 }
 
+#btn-home {
+  background: floralwhite;
+  border-radius: 5px;
+}
 
 #btn-code.invert {
   /* color: #F9243A; */
@@ -43,35 +48,32 @@ p {
 
 @media only screen and (max-width: 600px) {
   /* For tablets: */
-  #btn-code {
+  #btn-code, #btn-home {
     position: fixed;
-    right: 20px;
+    left: 75vw;
   }
-
 }
 
 @media only screen and (min-width: 600px) {
   /* For tablets: */
-  #btn-code {
+  #btn-code, #btn-home {
     position: fixed;
     right: 20px;
   }
-
 }
+
 @media only screen and (min-width: 1200px) {
   /* For desktop: */
-
-  #btn-code{
+  #btn-code, #btn-home{
     position: fixed;
     left: 50%;
     right: auto; 
     transform: translate(-50%, 0);
   }
-
 }
 
 .container {
-  position: relative;
+  /* position: relative; */
   /* background: #FFF; */
   /* z-index: 1; */
 }
@@ -99,9 +101,10 @@ p {
 #resume {
   position: relative;
   left: 0;
-  top: 35px;
+  top: 50px;
   height: 100vh;
   
+  transition: all 0.5s ease;
 }
 
 #resume.shift {
@@ -277,6 +280,7 @@ p {
 
 
 .link-portfolio {
+  cursor: pointer;
   color: #80DAFF;
   background: #D30707;
   padding: 1px 3px;
@@ -410,9 +414,236 @@ p {
 
 
 
-.forceR {
-  float: right;
+.site-header {
+  margin-top: 1em;
+  padding-left: 0.2em;
+  
+  color: floralwhite;
+  font-family: 'Satisfy', cursive;
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 1px 2px 3px rgba(0 ,0 ,0 ,0.9);  
 }
+
+@media only screen and (max-width: 600px) {
+  .site-header {    
+    /* margin-top: 1em; */
+  }
+}
+
+#projects {  
+	background-color: hsl(34, 53%, 82%);
+	background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(197, 62%, 11%, 0.35) 5px, hsla(197, 62%, 11%, 0.35) 10px, hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.35) 35px, hsla(5, 53%, 63%, 0.35) 40px, hsla(197, 62%, 11%, 0.35) 40px, rgba(10, 35, 45, 0.35) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px, hsla(5, 53%, 63%, 0.35) 60px, hsla(5, 53%, 63%, 0.35) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px, hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.35) 90px, hsla(5, 53%, 63%, 0.35) 110px, hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.35) 120px, hsla(197, 62%, 11%, 0.35) 140px), repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.35) 5px, hsla(197, 62%, 11%, 0.35) 10px, hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.35) 35px, hsla(5, 53%, 63%, 0.35) 40px, hsla(197, 62%, 11%, 0.35) 40px, hsla(197, 62%, 11%, 0.35) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px, hsla(5, 53%, 63%, 0.35) 60px, hsla(5, 53%, 63%, 0.35) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px, hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.35) 90px, hsla(5, 53%, 63%, 0.35) 110px, hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.35) 140px, hsla(197, 62%, 11%, 0.35) 160px);
+	/* background-blend-mode: multiply; */
+	/* background-size: 500% 500%; */
+  background-attachment: fixed;
+}
+
+.cork {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;
+  flex-wrap: wrap;
+
+  border-radius: 5px;
+  
+  background: url("./cork.jpg");
+  box-shadow: 1px 3px 6px rgba(0,0,0,.5);
+}
+
+.site {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 15px 10px !important;
+  box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  /* float: left; */
+  margin: 8px;
+  border: none !important;
+  
+  background-image: url("./_img/Coming soon - Logo.png")  !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  
+  transition: all 0.5s ease;
+}
+
+@media only screen and (max-width: 600px) {
+  .site {    
+    width: 120px;
+    height: 120px;
+    margin: 10px !important;
+  }
+}
+
+.site-description {
+  font-family: 'Righteous', cursive;
+  color: transparent;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0 ,0 ,0 ,0.0);
+  letter-spacing: 1px;
+  word-wrap: break-word;
+  white-space: normal;
+  
+  transition: all 0.5s ease;
+}
+
+@media only screen and (max-width: 600px) {
+  .site-description {
+    font-size: 0.75em;
+  }
+}
+
+.site:hover * {
+  color: floralwhite;
+  text-shadow: 1px 1px 3px rgba(0 ,0 ,0 ,0.9);
+}
+
+
+.site.foodies-delight {
+  background-image: url("./_img/foodies-delight - logo square.png")  !important;
+}
+
+.site.pomodoro {
+  background-image: url("./_img/PomodoroTimer - logo.png")  !important;
+}
+
+.site.calc-it {
+  background-image: url("./_img/Calculator - logo.png")  !important;
+}
+
+.site.wikitriever {
+  background-image: url("./_img/Wikitriever - logo.png")  !important;
+}
+.site.galileo {
+  background-image: url("./_img/Galileo2- logo square.png")  !important;
+}
+
+.site.game-of-life {
+  background-image: url("./_img/game-of-life - logo square.png")  !important;
+}
+
+.site.lemma {
+  background-image: url("./_img/lemma - logo square.png")  !important;
+}
+
+.site.simon {
+  background-image: url("./_img/Simon - logo.png")  !important;
+}
+
+.site.smmp {
+  background-image: url("./_img/SMMP - Logo.png")  !important;
+}
+
+.site.teach-physics {
+  background-image: url("./_img/TeachPhysics - Logo.png")  !important;
+}
+
+.cork button:hover.site {
+  /* border: 1px solid rgba(0,0,0,.75); */
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* 
+.modal {
+  padding-right: 0 !important
+}
+	
+.modal {
+  overflow-y: auto;
+ }
+ 
+.modal-open {
+  overflow: auto;
+  padding-right: 0px !important
+} */
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  border-radius: 7px;
+  font-weight: 500;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.fade-in {
+  opacity: 0; /*invisible from the start*/
+  animation: fadeIn ease-in 1; /*call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time*/
+  animation-fill-mode: forwards; /*this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  animation-duration: 0.3s;
+  animation-delay: 0.1s; /*delay to start*/
+}
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.fade-out {
+  opacity: 1; /*invisible from the start*/
+  animation: fadeOut ease-in 1; /*call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time*/
+  animation-fill-mode: forwards; /*this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  animation-duration: 0.3s;
+  animation-delay: 0.1s; /*delay to start*/
+}
+
+@keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -421,16 +652,21 @@ p {
 /* ################################# */
 /* ##### Scrollbar css styling ##### */
 /* ##### --------------------- ##### */
-body {
-  /* overflow-x: hidden;
-  overflow-y: hidden; */
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  display: none;
 }
 
 
 body {
   overflow-x: hidden;
   overflow-y: scroll;
-  height: 101vh;
+  /* height: 101vh; */
+  /* width: 101vw */
 }
 
 body::-webkit-scrollbar {
@@ -438,8 +674,15 @@ body::-webkit-scrollbar {
   height: 0.5em;
 }
 
+@media only screen and (min-width: 600px) {
+  body {
+    width: 101vw
+  }
+}
+
 body::-webkit-scrollbar-track {
   /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+  /* background: transparent; */
 }
 
 body::-webkit-scrollbar-thumb{

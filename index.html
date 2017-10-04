@@ -98,21 +98,15 @@
       &lt;&sol;div&gt;
     </code></pre>
 
-    <div class="container" id="btn-container">
-      <div class="row row-btn-code">
-          <div class="col-xs-12 text-right">
-            <div class="btn btn-default" id="btn-code">
-              Code
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <div class="container" id="resume">
+    <div class="container fade-in" id="resume">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-offset-1 col-lg-10 resume-outer-row">
           <div class="container-fluid">
 
+            
+            <div class="btn btn-default btn-code" id="btn-code">
+              Code
+            </div>
                 
             <div class="row row-bar">
               <div class="col-xs-offset-1 col-xs-10 top-bar">
@@ -144,10 +138,10 @@
                   <div class="col-md-1"></div>
                   <div class="col-xs-4 col-md-3 text-right left-section">
                     <h4 class="sub-heading top">sites</h4>
-                      <p><a class="link-portfolio" href="http://physrex.com/projects">Portfolio</a></p>
-                      <p><a class="link-imletired" href="https://imletired.com/">Im le Tired</a></p></p>
+                      <p><a class="link-portfolio" id="link-portfolio">Portfolio</a></p>
+                      <p><a class="link-imletired" href="https://imletired.com/" target="_blank">Im le Tired</a></p></p>
                     <h4 class="sub-heading">github</h4>
-                      <p><a class="link-github" href="https://github.com/PhysRex">PhysRex</a></p>
+                      <p><a class="link-github" href="https://github.com/PhysRex" target="_blank">PhysRex</a></p>
                     <h4 class="sub-heading">skills</h4>
                       <p>Continuous Improvement</p>
                       <p>Responsive Design</p>
@@ -171,8 +165,10 @@
                     <h4 class="sub-heading top">interesting projects</h4>
                       <h5 class="project-title"><a href="http://physrex.com/galileo">/Galileo</a></h5>
                         <p class="job-description">Designed in the style of Roguelike Dungeon Crawlers, this game has multiple stages, self-creating items and enemies, and uses React’s state and component API. Includes original sound effects and music.</p>
+                      <h5 class="project-title"><a href="http://physrex.com/foodies-delight">/Foodies-Delight</a></h5>
+                        <p class="job-description">An uncomplicated app to store your recipes locally. Allows users to add new recipes, edit them, and search their recipe book. Also uses the Edamam<sup>&reg;</sup> recipes API for user to discover new dishes and save them as well.</p>
                       <h5 class="project-title"><a href="http://physrex.com/game-of-life">/Game-of-Life</a></h5>
-                        <p class="job-description">Recreating mathematician John Conway's famous Game of Life, this is a teaching tool to explore the dynamics of cellular automata in an interactive, simple and inviting environment. Created with ReactJS and Sass.</p>                  
+                        <p class="job-description">Recreating mathematician John Conway's famous Game of Life, this is a teaching tool to explore the dynamics of cellular automata in an interactive, simple and inviting environment. Created with ReactJS and Sass.</p>
                       <h5 class="project-title"><a href="http://physrex.com/foodies-delight">/Foodies-Delight</a></h5>
                         <p class="job-description">An uncomplicated app to store your recipes locally. Allows users to add new recipes, edit them, and search their recipe book. Also uses the Edamam<sup>&reg;</sup> recipes API for user to discover new dishes and save them as well.</p>
                       <h5 class="project-title"><a href="http://physrex.com/lemma">/Lemma</a></h5>
@@ -267,11 +263,95 @@
       </div>
     </div>
 
-    
+    <div class="container-fluid fade-in hide" id="projects">
+      <div class="btn btn-default btn-code" id="btn-home">
+        Home
+      </div>
+      <div class="row">
+        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8">
+          <div class="row">
+            <h2 class="site-header">Apps</h2>
+            <div class="col-xs-12 text-center cork">
+              <a href="http://physrex.com/foodies-delight" target="_blank">
+                <button type="button" class="site foodies-delight btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><p class="site-description">Foodies Delight</p></button>     
+              </a>
+              <a href="http://physrex.com/pomodoro" target="_blank">
+                <button type="button" class="site pomodoro btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><p class="site-description">Pomodoro</p></button>
+              </a>
+              <a href="http://physrex.com/calc-it" target="_blank">
+                <button type="button" class="site calc-it btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><p class="site-description">Calc It!</p></button>
+              </a>
+              <a href="http://physrex.com/wikitriever" target="_blank">
+                <button type="button" class="site wikitriever btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><p class="site-description">WikiTriever</p></button>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <h2 class="site-header">Games</h2>
+            <div class="col-xs-12 text-center cork">
+              <a href="http://physrex.com/galileo" target="_blank">
+                <button type="button" class="site galileo btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><p class="site-description">Galileo</p></button>
+              </a>
+              <a href="http://physrex.com/game-of-life" target="_blank">
+                <button type="button" class="site game-of-life btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><p class="site-description">Game of Life</p></button>
+              </a>
+              <a href="http://physrex.com/lemma" target="_blank">
+                <button type="button" class="site lemma btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><p class="site-description">Lemma</p></button>
+              </a>
+              <a href="http://physrex.com/simon" target="_blank">
+                <button type="button" class="site simon btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><p class="site-description">Simon</p></button>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <h2 class="site-header">Sites</h2>
+            <div class="col-xs-12 text-center cork">
+              <a href="http://physrex.com/#" target="_blank">
+                <button type="button" class="site smmp btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><p class="site-description">SMMP</p></button>
+              </a>
+              <a href="http://physrex.com/#" target="_blank">
+                <button type="button" class="site teach-physics btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><p class="site-description">Teach Physics</p></button>
+              </a>
+              <a href="http://physrex.com/#" target="_blank">
+                <button type="button" class="site coming-soon btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><p class="site-description">Coming Soon!</p></button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="row row-footer">
+        <div class="col-xs-12 text-center">
+          <div class="footer">
+            | <p class="footer-email">ThePhysRex@gmail.com</p> |||||| <p class="footer-addr">3229 Yarmouth Ln</p> | <p class="footer-addr">Gastonia, NC 28056</p> | <p class="footer-tel">914.512.8510</p> |
+          </div>
+        </div>
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal fade-in">    
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3 class="modal-header">My website!</h3>
+          <p>My background prepared me to think broadly and critically about any problem.</p>         
+          <p>Here are some of my more recent projects: 
+            <a href="https://s.codepen.io/PhysRex/debug/xgRaEj/yokZEbgNEnPA">personal website</a>
+          </p>
+        </div>    
+      </div>
+      
+
+      </div>
+
+    </div>
 
 
   
     <script src="script.js"></script>
     <script src="prism.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
   </body>
 </html>
