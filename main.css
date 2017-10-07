@@ -447,7 +447,7 @@ p {
 
   border-radius: 5px;
   
-  background: url("_img/cork.jpg");
+  background: url("img/cork.jpg");
   box-shadow: 1px 3px 6px rgba(0,0,0,.5);
 }
 
@@ -463,7 +463,7 @@ p {
   margin: 8px;
   border: none !important;
   
-  background-image: url("_img/Coming soon - Logo.png")  !important;
+  background-image: url("img/Coming soon - Logo.png")  !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -505,42 +505,42 @@ p {
 
 
 .site.foodies-delight {
-  background-image: url("_img/foodies-delight - logo square.png")  !important;
+  background-image: url("img/foodies-delight - logo square.png")  !important;
 }
 
 .site.pomodoro {
-  background-image: url("_img/PomodoroTimer - logo.png")  !important;
+  background-image: url("img/PomodoroTimer - logo.png")  !important;
 }
 
 .site.calc-it {
-  background-image: url("_img/Calculator - logo.png")  !important;
+  background-image: url("img/Calculator - logo.png")  !important;
 }
 
 .site.wikitriever {
-  background-image: url("_img/Wikitriever - logo.png")  !important;
+  background-image: url("img/Wikitriever - logo.png")  !important;
 }
 .site.galileo {
-  background-image: url("_img/Galileo2- logo square.png")  !important;
+  background-image: url("img/Galileo2- logo square.png")  !important;
 }
 
 .site.game-of-life {
-  background-image: url("_img/game-of-life - logo square.png")  !important;
+  background-image: url("img/game-of-life - logo square.png")  !important;
 }
 
 .site.lemma {
-  background-image: url("_img/lemma - logo square.png")  !important;
+  background-image: url("img/lemma - logo square.png")  !important;
 }
 
 .site.simon {
-  background-image: url("_img/Simon - logo.png")  !important;
+  background-image: url("img/Simon - logo.png")  !important;
 }
 
 .site.smmp {
-  background-image: url("_img/SMMP - Logo.png")  !important;
+  background-image: url("img/SMMP - Logo.png")  !important;
 }
 
 .site.teach-physics {
-  background-image: url("_img/TeachPhysics - Logo.png")  !important;
+  background-image: url("img/TeachPhysics - Logo.png")  !important;
 }
 
 .cork button:hover.site {
