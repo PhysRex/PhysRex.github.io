@@ -79,17 +79,16 @@ p {
 }
 
 #code {
-  position: absolute;
+  position: fixed;
   transition: all 0.5s ease;
   left: 0vw;
   top: -10px;
   width: 40vw;
   border: 0;
   padding: 10px;
-  /* box-shadow: 0 0  25px 15px #272822; */
-  font-size: .7em;
+  border-radius: 0;
+  font-size: 1em;
 }
-
 
 #code.slide {
   left: -50vw;
@@ -696,7 +695,7 @@ body::-webkit-scrollbar-thumb{
 
 #code {
   overflow-y: scroll;
-  /* height: 101vh; */
+  height: 100.5vh;
 }
 
 #code::-webkit-scrollbar {
@@ -704,7 +703,7 @@ body::-webkit-scrollbar-thumb{
   height: 0.5em;
 }
 
-#code::-webkit-scrollbar-track {
+#code::-webkit-scrollbar-track, #code::-webkit-scrollbar-corner {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
 

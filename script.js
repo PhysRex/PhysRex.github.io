@@ -112,18 +112,21 @@ function getInnerText(el) {
 
 function convertHTML() {
   // Converting live html for "code" tag on resume
-  const htmlElem = document.body;
+  let htmlElem = document.body;
   
   let codeElem = document.getElementById("codeTag");
   codeElem.innerText = "";
 
   let htmlText = htmlElem.parentNode.innerHTML;
-  htmlText = htmlText.replace("</", "&lt;&sol;");
-  htmlText = htmlText.replace("<", "&lt;");
-  htmlText = htmlText.replace(">", "&gt;");
+  let find1 = "</"; let re1 = new RegExp(find1, "g");
+  let find2 = "<"; let re2 = new RegExp(find2, "g");
+  let find3 = ">"; let re3 = new RegExp(find3, "g");
+
+  htmlText = htmlText.replace(re1, "&lt;&sol;");
+  htmlText = htmlText.replace(re2, "&lt;");
+  htmlText = htmlText.replace(re3, "&gt;");
 
   codeElem.innerHTML = htmlText;
-
 }
 
 convertHTML();
