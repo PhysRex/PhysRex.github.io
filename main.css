@@ -413,6 +413,8 @@ p {
 
 
 
+
+
 .site-header {
   margin-top: 1em;
   padding-left: 0.2em;
@@ -430,7 +432,9 @@ p {
   }
 }
 
-#projects {  
+#projects {
+  min-height: 100vh;
+
 	background-color: hsl(34, 53%, 82%);
 	background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(197, 62%, 11%, 0.35) 5px, hsla(197, 62%, 11%, 0.35) 10px, hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.35) 35px, hsla(5, 53%, 63%, 0.35) 40px, hsla(197, 62%, 11%, 0.35) 40px, rgba(10, 35, 45, 0.35) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px, hsla(5, 53%, 63%, 0.35) 60px, hsla(5, 53%, 63%, 0.35) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px, hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.35) 90px, hsla(5, 53%, 63%, 0.35) 110px, hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.35) 120px, hsla(197, 62%, 11%, 0.35) 140px), repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.35) 5px, hsla(197, 62%, 11%, 0.35) 10px, hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.35) 35px, hsla(5, 53%, 63%, 0.35) 40px, hsla(197, 62%, 11%, 0.35) 40px, hsla(197, 62%, 11%, 0.35) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px, hsla(5, 53%, 63%, 0.35) 60px, hsla(5, 53%, 63%, 0.35) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px, hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.35) 90px, hsla(5, 53%, 63%, 0.35) 110px, hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.35) 140px, hsla(197, 62%, 11%, 0.35) 160px);
 	/* background-blend-mode: multiply; */
